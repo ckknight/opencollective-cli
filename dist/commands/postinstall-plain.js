@@ -1,11 +1,11 @@
-/**
- * Barebone version for old terminals that don't support emoji
- * and packages that still need to support old versions of Node
- */
+"use strict";
 
-import { getCollective } from '../lib/utils';
+var _utils = require("../lib/utils");
 
-const collective = getCollective();
+var collective = (0, _utils.getCollective)(); /**
+                                               * Barebone version for old terminals that don't support emoji
+                                               * and packages that still need to support old versions of Node
+                                               */
 
 console.log("");
 console.log("     *** Thank you for using " + collective.slug + "! ***");
